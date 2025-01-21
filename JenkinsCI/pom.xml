@@ -4,7 +4,7 @@
   <artifactId>JenkinsCI</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
-  <dependencies>
+ <dependencies>
   <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
@@ -13,14 +13,14 @@
 </dependency>
 
 <!-- https://mvnrepository.com/artifact/org.testng/testng -->
-<dependency>
-    <groupId>org.testng</groupId>
-    <artifactId>testng</artifactId>
-    <version>7.9.0</version> <!-- Use the latest version -->
-    <scope>test</scope>
-</dependency>
+    <dependency>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+       <version>7.9.0</version> <!-- Use the latest version -->
+        <scope>test</scope>
+    </dependency>
 
-  </dependencies>
+ </dependencies>
    <build>
   	<plugins>
   		<plugin>
@@ -45,5 +45,10 @@
            	</configuration>
   		</plugin>
   	</plugins>  
+  	<resources>
+        <resource>
+            <directory>src/test/resources</directory>
+        </resource>
+    </resources>
   </build>
 </project>
