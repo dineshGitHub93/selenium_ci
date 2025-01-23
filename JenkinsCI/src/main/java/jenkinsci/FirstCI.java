@@ -1,4 +1,4 @@
-package com.test.ci;
+package jenkinsci;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -20,6 +20,7 @@ public class FirstCI {
 		  
 		  //System.setProperty("webdriver.gecko.driver", "D:\\Selenium\\Drivers\\geckodriver.exe");
 		  driver = new ChromeDriver();
+		  driver.manage().window().maximize();
 		  
 	  }
 
